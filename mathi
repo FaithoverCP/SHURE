@@ -1,0 +1,92 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "private_outputs": true,
+      "provenance": [],
+      "authorship_tag": "ABX9TyOprKaGvCFLD2yGd5RDWF+L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/FaithoverCP/SHURE/blob/main/mathi\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "0xvEfRH38Rxn"
+      },
+      "outputs": [],
+      "source": [
+        "# ----\n",
+        "# AI Mathematical Olympiad Progress Prize 2\n",
+        "# Perfect Program Template using Directional AI Design\n",
+        "# ----\n",
+        "\n",
+        "# ==========================\n",
+        "#     SECTION 1: SETUP\n",
+        "# ==========================\n",
+        "\n",
+        "# If running in Colab, ensure we're using Python 3\n",
+        "!python --version\n",
+        "\n",
+        "# Install additional libraries as needed\n",
+        "!pip install kaggle transformers datasets einops sentencepiece\n",
+        "!pip install sympy torch torchvision torchaudio --upgrade\n",
+        "\n",
+        "# Import libraries\n",
+        "import os\n",
+        "import sys\n",
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "import torch\n",
+        "import transformers\n",
+        "import sympy\n",
+        "from sympy import symbols, simplify\n",
+        "import random\n",
+        "import json\n",
+        "import re\n",
+        "\n",
+        "print(\"All libraries imported successfully!\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# ==========================\n",
+        "# SECTION 2: KAGGLE AUTH\n",
+        "# ==========================\n",
+        "\n",
+        "# After uploading kaggle.json, move it to the right folder\n",
+        "!mkdir -p ~/.kaggle\n",
+        "!cp kaggle.json ~/.kaggle/\n",
+        "!chmod 600 ~/.kaggle/kaggle.json\n",
+        "\n",
+        "# Confirm we can access Kaggle CLI\n",
+        "!kaggle --version\n"
+      ],
+      "metadata": {
+        "id": "SASUQEja-QMF"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
